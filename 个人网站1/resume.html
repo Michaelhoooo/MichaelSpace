@@ -4,13 +4,252 @@
 		<meta charset="UTF-8">
 		<title>Michael's resume</title>
 		
+		<link rel="stylesheet" href="css/styleImageTab.css" media="screen" type="text/css" />
 		<link rel="icon" href="img/Heart_Stitch_Valentine_love_128px_500442_easyicon.net.png" type="image/x-icon"/>
 		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
 		<script src="bootstrap/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css"/>
+		<script src="js/jquery.fullpage.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		
+		
 	</head>
+	<style type="text/css">
+		body{
+     		background:url(img/bg.jpg) center center fixed;
+	  		background-repeat: no-repeat;
+	  		background-size:cover;/*将背景图片平铺展开，虽然没提示，但是可以用*/
+		}
+		.textIMG{
+			width: 160px;
+			height: 210px;
+			border: 4px solid ghostwhite;
+			border-radius: 30px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.section{
+			margin: 0 auto;
+			color: white;
+		}
+		.githubaddress{
+			color: white;
+		}
+		.githubaddress:hover{
+			color: floralwhite;
+		}
+		.githubaddress:active{
+			color: white;
+		}
+		.githubaddress:visited{
+			color: white;
+		}
+		.SkillsIN{
+			padding-bottom: 40px;
+		}
+		.lineClass{
+			
+			border-right: 0.5px dotted rgba(240,240,240,.3);
+		}
+		
+		#menu { margin: 0; padding: 0; position: fixed; left: 10px; top: 10px; list-style-type: none; z-index: 70;}
+		#menu li { float: left; margin:  0 10px 0 0; font-size: 12px; }
+		#menu a { float: left; padding: 5px 20px; background-color: rgba(255,255,255,.5); color: #333; text-decoration: none;border-radius: 10px;}
+		#menu .active a { color: #fff; background-color: rgba(240,240,240,.3);}
+		#fp-nav ul li a.active span,  
+    		.fp-slidesNav ul li a.active span {  
+        		background: #fff; /*这里设置的是活动导航的颜色*/  
+    		}  
+    		#fp-nav ul li a span,  
+    		.fp-slidesNav ul li a span {  
+        		background: #fff;/*这里设置的是非活动导航的颜色*/  
+    		} 
+    		#footer {
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		bottom: 0;
+		cursor: default;
+		height: 6em;
+		left: 0;
+		line-height: 8em;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+	}
+	</style>
 	<body>
-	   
+		<ul id="menu">
+			<li data-menuanchor="page1" class="active"><a href="#page1">基本信息</a></li>
+			<li data-menuanchor="page2"><a href="#page2">技能介绍</a></li>
+			<li data-menuanchor="page3"><a href="#page3">工作经历</a></li>
+			<li data-menuanchor="page4"><a href="#page4">项目经验</a></li>
+		</ul>
+	   <div id="dowebok">
+    			<div class="section" >
+    				<div class="ImageDiv" align="center">
+    					 <img src="img/header.JPG" class="textIMG"/>
+    					 <h3>何子豪</h3>
+    					 <h5>iOS工程师，前端工程师。</h5>
+    					 <p>GitHub:<a href="https://github.com/Michael199315" target="_blank" class="githubaddress">https://github.com/Michael199315</a></p>
+    					 <p>Email:hezihao@weibopay.com</p>
+    				</div>
+       		</div>
+   			<div class="section">
+   				<h3 align="center" class="SkillsIN">Skills to introduce</h3>
+       			<div class="skillbar clearfix " data-percent="80%">
+					<div class="skillbar-title" style="background: #d35400;"><span>Object C</span></div>
+					<div class="skillbar-bar" style="background: #e67e22;"></div>
+					<div class="skill-bar-percent">80%</div>
+				</div> <!-- End Skill Bar -->
+
+				<div class="skillbar clearfix " data-percent="60%">
+					<div class="skillbar-title" style="background: #2980b9;"><span>Swift</span></div>
+					<div class="skillbar-bar" style="background: #3498db;"></div>
+					<div class="skill-bar-percent">60%</div>
+				</div> <!-- End Skill Bar -->
+
+				<div class="skillbar clearfix " data-percent="80%">
+					<div class="skillbar-title" style="background: #2c3e50;"><span>iOS框架</span></div>
+					<div class="skillbar-bar" style="background: #2c3e50;"></div>
+				    <div class="skill-bar-percent">80%</div>
+				</div> <!-- End Skill Bar -->
+
+				<div class="skillbar clearfix " data-percent="75%">
+					<div class="skillbar-title" style="background: #46465e;"><span>HTML</span></div>
+					<div class="skillbar-bar" style="background: #5a68a5;"></div>
+					<div class="skill-bar-percent">75%</div>
+				</div> <!-- End Skill Bar -->
+
+				<div class="skillbar clearfix " data-percent="75%">
+					<div class="skillbar-title" style="background: #333333;"><span>CSS</span></div>				
+					<div class="skillbar-bar" style="background: #525252;"></div>
+					<div class="skill-bar-percent">75%</div>
+				</div> <!-- End Skill Bar -->
+
+				<div class="skillbar clearfix " data-percent="60%">
+					<div class="skillbar-title" style="background: #27ae60;"><span>javaScript</span></div>
+					<div class="skillbar-bar" style="background: #2ecc71;"></div>
+					<div class="skill-bar-percent">60%</div>
+				</div> <!-- End Skill Bar -->
+
+				<div class="skillbar clearfix " data-percent="70%">
+					<div class="skillbar-title" style="background: #124e8c;"><span>jQuery</span></div>
+					<div class="skillbar-bar" style="background: #4288d0;"></div>
+					<div class="skill-bar-percent">70%</div>
+				</div> <!-- End Skill Bar -->
+				<div class="skillbar clearfix " data-percent="60%">
+					<div class="skillbar-title" style="background: #28A4C9;"><span>React.js</span></div>
+					<div class="skillbar-bar" style="background: #2AABD2;"></div>
+					<div class="skill-bar-percent">60%</div>
+				</div> <!-- End Skill Bar -->
+				<div class="skillbar clearfix " data-percent="80%">
+					<div class="skillbar-title" style="background: #3E8F3E;"><span>Bootstrap</span></div>
+					<div class="skillbar-bar" style="background: #449D44;"></div>
+					<div class="skill-bar-percent">80%</div>
+				</div> <!-- End Skill Bar -->
+   			 </div>
+   			 
+   			 <div class="section" >
+   			 	<div align="center">
+   			 		<h3 style="padding-bottom: 20px;">工作经历</h3>
+       				<h5>黑龙江元火科技发展有限公司&nbsp;&bull;&nbsp;iOS工程师&nbsp;&bull;&nbsp;2014/06--2016/02</h5>
+       				<p>负责公司iOS平台下的iPhone应用程序的软件设计和开发</p>
+       				<p>参与项目需求分析，产品模块的概要和详细设计</p>
+       				<p>改善软件的性能，提高用户体验</p>
+       				<p>根据公司的要求书写相应的技术文档</p>
+       				<h5>&nbsp;&bull;&nbsp;</h5>
+   			 	</div>
+   			 	<div align="center">
+   			 		<h5>上海微汇金融（WeXFin）信息服务有限公司&nbsp;&bull;&nbsp;iOS工程师，前端工程师&nbsp;&bull;&nbsp;2016/03--至今</h5>
+   			 		<p>负责公司iOS项目开发,维护，版本升级</p>
+   			 		<p>参与公司Web项目开发，产品模块概要和部分交互设计</p>
+   			 		<p>负责产品前端设计和开发</p>
+       				<p>根据公司的要求书写相应的技术文档</p>
+   			 		<p></p>
+   			 	</div>
+       			
+   			 </div>
+   			 
+   			 <div class="section" >
+       			 <h3 align="center" class="SkillsIN">项目经验</h3>
+       			 <div class="container">
+       			 	<div class="row">
+       			 		<div class="col-md-2"></div>
+       			 		<div class="col-md-4 lineClass" align="center">
+       			 			<h4>此网站</h4>
+       			 			<p>网站初步的设计，基本功能的设计</p>
+       			 			<p>前端架构的搭建</p>
+       			 			<p>独立完成产品前端的设计和开发</p>
+       			 			<p>完善交互功能，改善用户体验</p>
+       			 			<p>产品后期的维护和不断更新</p>
+       			 			<p>&nbsp;&bull;&nbsp;</p>
+       			 		</div>
+       			 		<div class="col-md-4" align="center">
+       			 	    	    <h4>Atom(未完成)</h4>
+       			 	    	    <p>项目界面和功能的设计</p>
+       			 			<p>前端架构的搭建</p>
+       			 			<p>完成产品前端的设计和开发,模块化组件</p>
+       			 			<p>完善交互功能，改善用户体验</p>
+       			 			<p>产品后期的维护和不断更新</p>
+       			 			<p>&nbsp;&bull;&nbsp;</p>
+       			 	    </div>
+       			 	</div>
+       			 	<div class="row">
+       			 		<div class="col-md-2" ></div>
+       			 		<div class="col-md-4 lineClass" align="center">
+       			 			<h4>SOIREE小黑裙</h4>
+       			 	    	    <p>小黑裙iOS端的开发和功能设计</p>
+       			 			<p>iOS端整体框架的选择和搭建</p>
+       			 			<p>与服务器端同事讨论API接口</p>
+       			 			<p>完善交互功能，改善用户体验</p>
+       			 			<p>产品后期的维护和不断更新</p>
+       			 			
+       			 		</div>
+       			 		<div class="col-md-4" align="center">
+       			 			<h4>今日元气</h4>
+       			 	    	    <p>今日元气iOS端的开发和功能设计</p>
+       			 			<p>iOS端整体框架的选择和搭建</p>
+       			 			<p>实现登陆，注册，分享等功能</p>
+       			 			<p>完成集成测试，并修改Bug。</p>
+       			 			<p>产品后期的维护和不断更新</p>
+       			 		</div>
+       			 	</div>
+       			 	   
+       			 	    	    	    <footer id="footer"><p>GitHub:<a href="https://github.com/Michael199315" target="_blank" class="githubaddress">https://github.com/Michael199315</a></p></footer>
+       			 	    	    
+       			 	    	
+       			 	   
+       			 </div>
+   			 </div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+   					 $('#dowebok').fullpage({
+   					 	navigation:true,
+   					 	navigationTooltips:["简介","技能介绍","工作经历","项目经验"],
+   					 	showActiveTooltip:true,
+   					 	continuousVertical:false,
+   					 	anchors: ['page1', 'page2', 'page3', 'page4'],
+						menu: '#menu',
+						afterLoad: function(anchorLink, index){
+			if(index == 2){
+				$('.skillbar').each(function(){
+					$(this).find('.skillbar-bar').animate({
+						width:$(this).attr('data-percent')
+					},5000,function(){
+                          $('.skill-bar-percent').css('color','white');
+					});
+					
+				});
+			}
+   		},
+	});
+});
+		</script>
 	</body>
 </html>
