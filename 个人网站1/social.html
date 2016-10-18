@@ -2,8 +2,81 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title></title>
+		<title>social</title>
+		<link rel="stylesheet" href="css/styleImageTab.css" media="screen" type="text/css" />
+		<link rel="icon" href="img/Heart_Stitch_Valentine_love_128px_500442_easyicon.net.png" type="image/x-icon"/>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
+		<script src="bootstrap/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css"/>
+		<script src="js/jquery.fullpage.min.js" type="text/javascript" charset="utf-8"></script>
 	</head>
+	<style type="text/css">
+		body{
+			background:#f7f7f7 url(img/bg.jpg) repeat top left;
+		}
+		.textIMG{
+			width: 160px;
+			height: 210px;
+			border: 4px solid ghostwhite;
+			border-radius: 30px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.section{
+			margin: 0 auto;
+			color: white;
+		}
+		.githubaddress{
+			color: white;
+		}
+		.githubaddress:hover{
+			color: floralwhite;
+		}
+		.githubaddress:active{
+			color: white;
+		}
+		.githubaddress:visited{
+			color: white;
+		}
+		#footer {
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.5) 75%);
+		bottom: 0;
+		cursor: default;
+		height: 6em;
+		left: 0;
+		line-height: 8em;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+	}
+	</style>
 	<body>
+		 <div id="dowebok">
+    			<div class="section" >
+    				<div class="ImageDiv" align="center">
+    					 <img src="img/QR.JPG" class="textIMG"/>
+    					 <h3>何子豪</h3>
+    					 <h5>iOS工程师，前端工程师。</h5>
+    					 <p>GitHub:<a href="https://github.com/Michael199315" target="_blank" class="githubaddress">https://github.com/Michael199315</a></p>
+    					 <p>Sina:<a href="http://weibo.com/2243408145/profile?topnav=1&wvr=6&is_all=1" target="_blank" class="githubaddress">http://weibo.com/2243408145/profile?topnav=1&wvr=6&is_all=1</a></p>
+    					 <p>QQ:549077122</p>
+    					 <p>gmail:michaelho199315@gmail.com</p>
+    					 <p>Email:hezihao@weibopay.com</p>
+    				</div>
+       		</div>
+       		<footer id="footer"><p><a href="https://github.com/Michael199315" target="_blank" class="githubaddress">Design:by_Michael</a></p></footer>
+       	</div>
+		<script type="text/javascript">
+			$(function(){
+   					 $('#dowebok').fullpage();
+            });
+		</script>	
+		
 	</body>
 </html>
