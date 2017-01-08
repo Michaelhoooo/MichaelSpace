@@ -180,15 +180,9 @@
 <div class="section">
 	<div align="center">
 		<h3 style="padding-bottom: 20px;">工作经历</h3>
-<h5>黑龙江元火科技发展有限公司&nbsp;&bull;&nbsp;iOS工程师&nbsp;&bull;&nbsp;2014/06--2016/02</h5>
-<p>负责公司iOS平台下的iPhone应用程序的软件设计和开发</p>
-<p>参与项目需求分析，产品模块的概要和详细设计</p>
-<p>改善软件的性能，提高用户体验</p>
-<p>根据公司的要求书写相应的技术文档</p>
-<h5>&nbsp;&bull;&nbsp;</h5>
 </div>
 <div align="center">
-	<h5>上海微汇金融（WeXFin）信息服务有限公司&nbsp;&bull;&nbsp;iOS工程师，前端工程师&nbsp;&bull;&nbsp;2016/03--至今</h5>
+	<h5>上海微汇金融（WeXFin）信息服务有限公司&nbsp;&bull;&nbsp;iOS工程师，前端工程师&nbsp;&bull;&nbsp;2015/03--至今</h5>
 	<p>负责公司iOS项目开发,维护，版本升级</p>
 	<p>参与公司Web项目开发，产品模块概要和部分交互设计</p>
 	<p>负责产品前端设计和开发</p>
@@ -273,29 +267,29 @@
 </div>
 </div>
 <script type="text/javascript">
-			$(function () {
-				$('#dowebok').fullpage({
-					navigation: true,
-					navigationTooltips: ["简介", "技能介绍", "工作经历", "项目经验"],
-					showActiveTooltip: true,
-					continuousVertical: false,
-					anchors: ['page1', 'page2', 'page3', 'page4'],
-					menu: '#menu',
-					afterLoad: function (anchorLink, index) {
-						if (index == 2) {
-							$('.skillbar').each(function () {
-								$(this).find('.skillbar-bar').animate({
-									width: $(this).attr('data-percent')
-								}, 5000, function () {
-									$('.skill-bar-percent').css('color', 'white');
-								});
+	$(function () {
+		$('#dowebok').fullpage({
+			navigation: true,
+			navigationTooltips: ["简介", "技能介绍", "工作经历", "项目经验"],
+			showActiveTooltip: true,
+			continuousVertical: false,
+			anchors: ['page1', 'page2', 'page3', 'page4'],
+			menu: '#menu',
+			afterLoad: function (anchorLink, index) {
+				if (index == 2) {
+					$('.skillbar').each(function () {
+						$(this).find('.skillbar-bar').animate({
+							width: $(this).attr('data-percent')
+						}, 5000, function () {
+							$('.skill-bar-percent').css('color', 'white');
+						});
 
-							});
-						}
-					},
-				});
-			});
-		</script>
+					});
+				}
+			},
+		});
+	});
+</script>
 </body>
 
 </html>

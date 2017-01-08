@@ -145,6 +145,7 @@
                 shiftPoint(p);
             }});
     }
+   
 
     // Canvas manipulation
     function drawLines(p) {
